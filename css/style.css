@@ -1,0 +1,1024 @@
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Myriad Pro Regular';
+    }
+    .clearfix {
+        clear: both;
+    }
+    .main_bg_cor {
+        background-color: #ff7d7d;
+        /*#FF5C5D;*/
+    }
+    .main_tx_cr {
+        color: #ff7d7d !important;
+        /*#FF5C5D;*/
+    }
+    .padd_left {
+        padding-left: 0px;
+    }
+    .padd_right {
+        padding-right: 0px;
+    }
+    .logo {
+        padding: 1.2rem 0rem 0em 1rem;
+    }
+    .navbar-default {
+        background-color: #fff;
+    }
+    .navbar {
+        margin-bottom: 0px;
+        border: none;
+    }
+    .nav > li {
+        padding: 0px 3rem 0 0;
+    }
+    .nav > li > a:hover {
+        text-decoration: none;
+        color: #ff5c5c !important;
+    }
+    .menus {
+        padding: 1.5rem 0rem 0rem 0rem;
+        font-size: 18px
+    }
+    .user {
+        background-image: url(../image/user.png);
+        background-repeat: no-repeat;
+        padding-left: 4.5rem;
+    }
+    header {
+        box-shadow: 0px 1px 3px #ccc;
+        background-color: #00357f;
+    }
+    .btn {
+/*        border-radius: 0;*/
+        font-size: 16px;
+/*        padding-top: 8px;*/
+        transition: all 0.5s linear;
+        border: transparent;
+    }
+    .banner {
+        position: relative;
+        background-image: url(../image/banner-home.jpg);
+        background-repeat: no-repeat;
+        /*    background-position: top center;
+      */
+        width: 100%;
+    }
+    /* custom radio button */
+    
+    .control {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        padding-left: 30px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .control__indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+    }
+    .control--radio .control__indicator {
+        border-radius: 50%;
+    }
+    /* Hover and focus states */
+    
+    .control:hover input ~ .control__indicator,
+    .control input:focus ~ .control__indicator {
+        /*	background: #fff; */
+    }
+    /* Checked state */
+    
+    .control input:checked ~ .control__indicator {
+        background: #fff;
+    }
+    /* Hover state whilst checked */
+    
+    .control:hover input:not([disabled]):checked ~ .control__indicator,
+    .control input:checked:focus ~ .control__indicator {
+        background: #fff;
+    }
+    /* Check mark */
+    
+    .control__indicator:after {
+        position: absolute;
+        display: none;
+        content: '';
+    }
+    /* Show check mark */
+    
+    .control input:checked ~ .control__indicator:after {
+        display: block;
+    }
+    /* Checkbox tick */
+    
+    .control--checkbox .control__indicator:after {
+        top: 4px;
+        left: 8px;
+        width: 3px;
+        height: 8px;
+        transform: rotate(45deg);
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+    }
+    /* Radio button inner circle */
+    
+    .control--radio .control__indicator:after {
+        top: 4px;
+        left: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ff5c5c;
+    }
+    /* end radio button */
+    
+    .form-padding {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 2.5rem;
+        color: #fff;
+        position: relative;
+        top: 15px;
+        height: 300px
+    }
+    .form-padding h2 {
+        margin: 0 0 20px;
+    }
+    .trip {
+        width: 100%;
+    }
+    .journey,
+    .date {
+        width: 100%;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .form-padding input {
+        padding: 1rem 1rem 1rem 4rem;
+        color: #000;
+        border-radius: 4px;
+    }
+    .journey input:nth-child(2) {
+        position: absolute;
+    }
+    .journeys {
+        position: relative;
+    }
+    .journeys input {
+        width: 48.5%;
+    }
+    #to {
+        margin-left: 1rem;
+    }
+    .form-padding .searchs {
+        background-color: #FF5C5D;
+        color: #fff !important;
+        border: 1px solid transparent;
+        background-image: url(../image/search.png);
+        background-repeat: no-repeat;
+        background-position: 28%;
+        transition: all 0.5s linear;
+        padding: 0.60rem;
+        background-size: 23px;
+    }
+    .form-padding .searchs:hover {
+        background-color: #666;
+    }
+    .date input {
+        width: 49.3%;
+        margin-bottom: 0;
+    }
+    .swapping {
+        position: absolute;
+        top: 5px;
+        left: 47.2%;
+    }
+    .searchs {
+        width: 50%;
+    }
+    .place {
+        background-image: url(../image/place.jpg);
+        background-repeat: no-repeat;
+        background-position: 4%;
+        font-size: 16px;
+    }
+    .return,
+    .place_temp {
+        background-position: 4%;
+        padding: 1rem 1rem 1rem 4rem !important;
+    }
+    .dates {
+        background-image: url(../image/date.jpg);
+        background-repeat: no-repeat;
+        background-position: 4%;
+        font-size: 16px;
+    }
+    .city_img {
+        width: 100%;
+    }
+    .city {
+        overflow: hidden;
+        margin-bottom: 3rem;
+        position: relative;
+        box-shadow: 0px 0px 3px #ccc;
+        color: #ff5c5c;
+        transition: all 0.5s linear;
+    }
+    .city:hover {
+        background-color: #fff1f1;
+    }
+    .left-img {
+        width: 30%;
+        float: left;
+    }
+    .right-content {
+        width: 70%;
+        float: right;
+        padding: 0rem 4.5rem;
+        text-align: center;
+    }
+    .right-content h4 {
+        margin: 16px 0;
+    }
+    .center-border {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 16px;
+    }
+    .prc {
+        color: #ff5c5c;
+        margin-bottom: 4rem;
+        font-family: 'Myriad Pro Semibold';
+        text-transform: uppercase;
+    }
+    .offers {
+        background-image: url(../image/bg-offer.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        color: #ff5c5c;
+        padding: 5rem 0;
+        background-position: top center;
+    }
+    .offers h2 {
+        margin: 0 0 20px;
+    }
+    .offers h3 {
+        color: #fff;
+        margin-bottom: 4rem;
+    }
+    .cor {
+        background-color: #ff5c5c;
+        color: #fff;
+    }
+    .section {
+        padding: 35px 0;
+    }
+    .routes {
+        text-align: left;
+        padding: 0 2.5rem;
+    }
+    .routes h6 {
+        color: #666;
+        margin: 8px 0 0;
+    }
+    .complaints {
+        padding-bottom: 45px;
+    }
+    .complaints h4 {
+        padding-top: 10px;
+    }
+    .complaints h3 {
+        margin: 2rem 0rem 4rem 0rem;
+    }
+    footer {
+        background-color: #303030;
+        color: #fff;
+        padding: 3rem 0rem;
+        margin-top: 1rem;
+    }
+    footer li {
+        list-style: none;
+        line-height: 28px;
+        padding-left: 8px
+    }
+    footer li a {
+        color: #fff;
+        font-size: 16px;
+    }
+    footer li a:hover {
+        color: #fff;
+        text-decoration: : underline;
+    }
+    footer h4 a,
+    footer h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .social li {
+        display: inline;
+    }
+    #change {
+        cursor: pointer;
+    }
+    .copyrights h4 {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .navbar-inverse {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .nav > li > a {
+        color: #fff !important;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+    .slider {
+        position: relative;
+        top: 15px;
+    }
+    .bx-controls-auto {
+        display: none;
+    }
+    .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+        display: none;
+    }
+    .bx-wrapper {
+        border: none;
+    }
+    #last {
+        display: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .quk_bk li {
+        background-image: url(../image/tick.png);
+        background-repeat: no-repeat;
+        padding-left: 3rem;
+        background-position: 0 0.6em;
+        line-height: 35px;
+    }
+    .quick_book {
+        /* padding: 0.7rem 0rem; */
+    }
+    .quick_book li a {
+        color: #000;
+    }
+    .help-icon li {
+        background-repeat: no-repeat;
+        line-height: 35px;
+        padding-left: 4rem;
+        background-position: 0 0.33em;
+    }
+    .help-icon li:nth-child(1) {
+        background-image: url(../image/message-new.png);
+    }
+    .help-icon li:nth-child(2) {
+        background-image: url(../image/landline.png);
+    }
+    .help-icon li:nth-child(3) {
+        background-image: url(../image/message.png);
+    }
+    .quick_book ul:nth-child(2) {
+        padding-right: 12rem;
+    }
+    .helpline {
+        box-shadow: 0px 0px 1px;
+        border: 1px solid #DBDBDB;
+        /*  background-color: #F6F6F6; */
+        padding: 0rem 3rem;
+        background-color: #00357f;
+        color: #fff;
+        /*
+        background: -webkit-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -o-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -moz-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6); */
+        margin-bottom: 1rem;
+    }
+    .quick_book h2 {
+        color: #FF5C5D;
+        margin: 5px 0 0 0;
+    }
+    .trip li {
+        float: left;
+        padding-right: 1rem;
+    }
+    .bx-wrapper img {
+        width: 100%;
+        height: 300px;
+    }
+    /* modal */
+    /* login pop up */
+    
+    #dropDown_open {
+        /* display: none; */
+    }
+    #login {
+        position: relative;
+        top: -8px;
+        cursor: pointer;
+    }
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: transparent;
+        color: #ff5c5c !important;
+        transition: all 0.5s linear;
+    }
+    /* chat app */
+    
+    button.chat {
+        position: fixed;
+        bottom: 10px;
+        width: 130px;
+        height: 45px;
+        right: 10px;
+        border: 1px solid mintcream;
+        outline: 0;
+        border-radius: 10px;
+        background-color: mediumseagreen;
+        color: #fff;
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+        -moz-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    .chat_cont {
+        width: 300px;
+    }
+    #chatBox {}
+    .chatWindow {
+        display: none;
+        width: 300px;
+        position: fixed;
+        right: 1rem;
+        bottom: 1.5rem;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        background-color: #fff;
+        height: 381px
+    }
+    .chat_header {
+        text-align: center;
+        padding: 3px 4px;
+        background-color: #FF5C5D;
+        font-size: 16px;
+        color: #fff;
+        position: fixed;
+        width: 300px;
+        top: 0;
+    }
+    .chat_header img {
+        cursor: pointer;
+    }
+    .mimize {
+        position: absolute;
+        top: 2px;
+        right: 4px;
+        cursor: pointer;
+    }
+    .chat-form {
+        padding: 1.5rem 2rem;
+        margin-top: 3rem;
+    }
+    .chat_page {
+        width: 300px;
+        display: none;
+    }
+    .chat-details h6 {
+        margin: 0px;
+        padding-left: 3.8rem;
+        font-size: 16px;
+    }
+    .chat_user {
+        margin-top: 3rem;
+    }
+    .cus_logo {
+        float: left;
+        width: 13%;
+    }
+    .cus_text {
+        width: 87%;
+        float: right;
+    }
+    .usr_text {
+        width: 87%;
+        float: left;
+        text-align: right;
+        padding-right: 1.5rem;
+    }
+    .usr_logo {
+        float: right;
+        width: 13%;
+    }
+    .cus_text span {
+        padding: 3px 8px;
+    }
+    .chat_table {
+        width: 100%;
+    }
+    .customer_chat {}
+    .company_details {
+        padding: 3px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .chat_table tr {
+        border-bottom: 1px solid #eee;
+        border-bottom-style: dashed;
+    }
+    .chat_table td {
+        padding: 6px 0px;
+    }
+    .chat_table span {
+        position: relative;
+        top: 5px;
+    }
+    .chat_enr {
+        margin-top: 2rem;
+        position: fixed;
+        width: 280px;
+        bottom: 0rem;
+        background-color: #fff;
+        padding-top: 5px;
+    }
+    .chat_modal {
+        padding: 0.5rem 1rem;
+        overflow-y: scroll;
+        height: 231px;
+    }
+    .chat_enr span {
+        float: right;
+    }
+    /* booking */
+    
+    .booking {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    #retu_date {
+        padding-left: 5rem;
+    }
+    .onward input {
+/*
+        width: 110px;
+        text-align: center;
+*/
+            border: 1px solid #e7e7e7;
+    }
+    .onward .form-group {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .return_date {
+/*
+        display: none;
+        cursor: pointer;
+*/
+    }
+    /*
+    .date_left {
+        background-image: url(../image/date_left.png);
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 14px;
+}
+    .date_right {
+        background-image: url(../image/date_right.png);
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 14px;
+}
+*/
+    
+    .filter {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: -webkit-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -o-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -moz-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        padding: 0.75rem 0rem 0rem 0rem;
+    }
+    .dropdown-toggle {
+        background-color: transparent;
+    }
+    .search-book-item {
+        background-color: #f2f2f2;
+        padding: 1rem;
+    }
+    .search-book-item .form-inline .form-group:first-child {
+        float: left;
+    }
+    .search-book-item img {
+        float: left;
+        position: relative;
+        top: 10px;
+        left: 1.5rem;
+    }
+    .search-book-item .form-inline .form-group:last-child {
+        float: right;
+    }
+    .filter_drop .dropdown {
+        float: left;
+        width: auto;
+        border-left: 1px solid #ccc;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    .rem_bor {
+        border-left: none !important;
+    }
+    .dropdown {
+        cursor: pointer;
+    }
+    .dt_info img {
+        float: left;
+        padding-right: 14px;
+        position: relative;
+        top: 5px;
+    }
+    .dt_info p:first-child {
+        float: left;
+        padding-right: 14px;
+    }
+    .amenities {
+        display: flex;
+/*        margin-bottom: 10px;*/
+            margin: 1.5rem 0rem;
+    }
+    .amenities li {
+        padding-right: 2rem;
+        cursor: pointer;
+    }
+    .targetDiv {
+        display: none;
+    }
+    .filter .dropdown-menu {
+        top: 36px;
+        padding: 0px 0;
+        margin: 0px 0 0;
+        border-radius: 0px;
+        background: -webkit-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -o-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: -moz-linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+        background: linear-gradient(#FDFCFD, #FAF8F9, #F7F5F6);
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: #FF5C5D;
+        text-decoration: none;
+        background-color: #fff;
+    }
+    .seat_pg_bor {
+        border: 1px solid #ccc;
+        padding: 0.75rem 2rem;
+    }
+    .seat_no,
+    .seat_pay {
+        padding: 1.2rem 0rem 0rem 0rem;
+    }
+    .booking_seat button:last-child {
+        margin: 2rem 0rem;
+        width: 100%;
+    }
+    .booking_inner {
+        padding: 2rem;
+    }
+    .search_res {
+        padding: 1rem;
+        border-bottom: 1px solid #e7e7e7;
+        cursor: pointer;
+        /*        box-shadow: 0px 1px 2px grey;*/
+    }
+    .seat_sec_opn {
+        padding: 2px 3rem;
+        margin-bottom: 4px;
+        border: transparent;
+    }
+    .dropd {
+        background-image: url(../image/bottom-down.png);
+        background-repeat: no-repeat;
+        width: 13px;
+        height: 7px;
+        position: absolute;
+           top: 8px;
+    right: 9px;
+        cursor: pointer;
+    }
+    /* seat layout */
+    
+
+.bus_border {
+border: 1px solid #CDCDCD;
+    margin: 0rem 1rem 1rem 0rem;
+    background-color: #fff;
+    width: 450px;
+    float: left;
+}
+.bus_form_out_sp {
+    margin-top: 10px;
+    display: none;
+}
+.seatWrap {
+      padding: 1.5rem;
+    position: relative;
+    height: 218px;
+}
+.sleeperwrap {
+    height: 140px;
+}
+.seats ul {
+    list-style: none;
+    margin: 0px;
+}
+.drive_seat {
+       position: absolute;
+    left: 12px;
+    top: 19px;
+}
+.seats td {
+    cursor: pointer;
+    padding: 5px 7px;
+}
+.seats {
+        position: absolute;
+    right: 12px;
+}
+.seats tr:hover {
+    background: none;
+}
+.seat_layer {
+    height: 22px;
+    width: 24px;
+    display: inline-flex;
+    cursor: pointer;
+    background-image: url(../image/seat.png);
+    background-repeat: no-repeat;
+}
+.no_seats {
+    display: none;
+    background-image: none !important;
+}
+.seat_layer:hover {
+    background-color: red;
+}
+.seat_layer:active {
+    background-color: yellow;
+}
+
+
+/* seat layout end */
+    .sleeperwrap {
+        height: 170px;
+    }
+    .sleeper {
+        position: absolute;
+        right: 8px;
+    }
+    .sleeper li {
+        display: inline-flex;
+        cursor: pointer;
+        padding: 5px 14px;
+    }
+    .sleeper_layer {
+        background-image: url(../image/sleeper.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        display: inline-flex;
+        width: 40px;
+        height: 22px;
+    }
+    .sleeper ul:last-child {
+        margin-top: 2rem;
+    }
+    .sleeper_layer:hover {
+        background-color: red;
+    }
+    .sleeper_layer:active {
+        background-color: yellow;
+    }
+
+.sleeper-base {
+    float: left;
+    width: 460px;
+}
+    .seat_info {
+        margin-top: 2.5rem;
+        width: 150px;
+        float: left;
+    }
+    .seat_info li {
+        height: 22px;
+        width: 24px;
+        cursor: pointer;
+        background-image: url(../image/seat.png);
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        width: 150px;
+        padding-left: 3.5rem;
+        margin-bottom: 2rem;
+        margin-top: 10px;
+    }
+.sleeper_info {
+    float: left;
+    margin-top: 4rem;
+}
+ .sleeper_info li {
+        height: 22px;
+        width: 40px;
+        cursor: pointer;
+        background-image: url(../image/sleeper.png);
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        width: 180px;
+        padding-left: 5.5rem;
+        margin-bottom: 2rem;
+        margin-top: 10px;
+    }
+    .seat_layout {
+        /*        background-color: #fff8f8; */
+        display: none;
+        color: #999999;
+    }
+    .booking_inner .dropdown-menu {
+        width: 100%;
+    }
+    .booking_inner .caret {
+        position: absolute;
+        right: 2rem;
+        top: 1.9rem
+    }
+    .seat-res-p {
+        color: #a0a0a0;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .jq-retu-cl {
+        position: relative;
+        left: 10px;
+    }
+    .seat_info_avai {
+        margin-bottom: 0px;
+        padding-top: 1.6rem;
+    }
+    /* Suggestions */
+    
+    .phone,
+    .message,
+    .landline {
+        background-repeat: no-repeat;
+        /*    width: 60px;*/
+        height: 60px;
+        margin: 2rem 0rem;
+    }
+    .phone {
+        background-image: url(../image/phone-lg.png);
+    }
+    .message {
+        background-image: url(../image/message-lg.png);
+    }
+    .landline {
+        background-image: url(../image/landline-lg.png);
+    }
+    .suggestions p {
+        position: relative;
+        top: 1.5rem;
+        left: 7.5rem;
+    }
+    .suggestions h3 {
+        font-size: 28px;
+        margin: 4rem 0;
+    }
+    .suggestions {
+        margin: 4rem 0rem 2rem 0rem;
+    }
+ul {
+    margin: 0px;
+}
+.table {
+    margin-bottom: 0px;
+}
+.table_res {
+    margin-top: 1.5rem;
+}
+.schedules table {
+    margin-top: 1rem;
+}
+.rec_tab {
+        position: relative;
+    top: 5px;
+    left: 10px;
+}
+.terms ol{
+    padding-left: 4rem;
+}
+.feedback form {
+    padding: 1rem 0;
+}
+.agent-regi ol {
+    padding-left: 2rem;
+}
+.age-form {
+    margin-top: 1rem;
+}
+.gallery li {
+    width: 20%;
+    float: left;
+         padding-left: 1rem;
+}
+.gallery li img { 
+    width: 100%;
+        height: 170px;      
+}
+.search-form {
+        padding-top: 2rem;
+}
+.pass-bor {
+    border: 1px solid #eee;
+        margin-top: 1.5rem;
+        border-radius: 4px;
+        padding-bottom: 1.5rem;
+}
+.pass-bor h4 {
+    border-bottom: 1px solid #ccc;
+        margin-bottom: 13px;
+    padding-bottom: 10px;
+}
+.pass-p {
+        float: left;
+    padding-right: 10px;
+}
+.add-change {
+    display: none;
+    cursor: pointer;
+}
+.passenger .form-group {
+    padding-right: 2rem;
+}
+
+.on-joun .alert {
+    padding: 8px 15px;
+}
+.sel-seat div:first-child {
+    float: left;
+    width: 90px;
+}
+.coupons {
+    display: none;
+}
+.payment-deta li div:first-child{
+        width: 200px;
+    float: left;
+}
+.payment_options {
+    display: flex;
+}
+.payment_options li {
+    padding-right: 6rem;
+}
+.payment_options li:first-child {
+    padding-left: 0rem;
+}
+.payment_options input {
+        margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+.pass-bor section {
+    padding: 2rem 0rem;
+}
+
+.pass-bor section .form-horizontal {
+    margin-top: 3rem;
+}
+.Wallets_options li img {
+    width: 120px;
+    padding-left: 10px;
+}
+.Wallets_options {
+    display: flex;
+}
+.Wallets_options li {
+   padding-right: 2rem;
+}
+.booking_seat {
+    margin-top: 20px;
+}

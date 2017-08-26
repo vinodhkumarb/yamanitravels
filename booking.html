@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" /> </head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <div class="logo"> <img src="image/logo.png" alt="logo"> </div>
+                    </div>
+                    <div id="navbar6" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right menus">
+                            <li><a href="#">Print / SMS Ticket</a></li>
+                            <li><a href="#">Cancel Ticket</a></li>
+                            <li><a href="#">Cargo services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal1">Agent Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Agent login modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Agent Log In</h4> </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> </div>
+                        <div class="checkbox text-center">
+                            <label>
+                                <input type="checkbox"> Remember me </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="booking">
+        <div class="container">
+            <!-- modify date st -->
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="main_tx_cr seat_info_avai">80 seats Available</p>
+                </div>
+                <div class="col-md-4 search-book-item">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="From"> </div> <img src="image/book-arrow.png" alt="" />
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="To"> </div>
+                    </form>
+                </div>
+                <div class="col-md-4 onward">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group"> <span class="main_tx_cr">Onward</span>
+                                <input type="text" class="datepicker" data-provide="datepicker" /> </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group return_date"> <span class="main_tx_cr">Return</span>
+                                <input type="text" class="datepicker" data-provide="datepicker" /> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary main_bg_cor pull-right">Modify</button>
+                </div>
+            </div>
+            <!-- modify date end -->
+        </div>
+    </section>
+    <section class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <p class="main_tx_cr">Filter : </p>
+                </div>
+                <div class="col-md-8 filter_drop padd_left">
+                    <div class="dropdown rem_bor">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span>Operator</span>
+                            <div class="dropd"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span>Bus Type</span>
+                            <div class="dropd"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span>Boarding Points</span>
+                            <div class="dropd"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span>Dropping points</span>
+                            <div class="dropd"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="main_tx_cr pull-right">Sort By : </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dropdown">
+                                <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span>Start Time</span>
+                                    <div class="dropd"></div>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search_res">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Service 75</p>
+                    <p class="seat-res-p">2+2, Platinum Class,AC, LED</p>
+                </div>
+                <div class="col-md-2 dt_info">
+                    <p>13.50</p> <img src="image/Arrow_Forward.png" alt="" />
+                    <p>10.25</p>
+                    <div class="clearfix"></div>
+                    <p class="seat-res-p">10.45 Hours</p>
+                </div>
+                <div class="col-md-3">
+                    <ul class="amenities">
+                        <li><img src="image/amet_01.png" alt="" /></li>
+                        <li><img src="image/amet_03.png" alt="" /></li>
+                        <li><img src="image/amet_05.png" alt="" /></li>
+                        <li><img src="image/ame_01.png" alt="" /></li>
+                        <li><img src="image/ame_03.png" alt="" /></li>
+                        <li><img src="image/ame_05.png" alt="" /></li>
+                    </ul>
+                    <!--
+                    <div class="dropdown seat-res-p">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="main_tx_cr">
+                            <span> Boarding and Dropping Point</span>
+                            <div class="dropd" style="right:4rem;"></div>
+                        </div>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+--></div>
+                <div class="col-md-2">
+                    <p class=""><span>&#8377;</span> 1000</p>
+                    <p class="seat-res-p main_tx_cr"> Cancellation Policy</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="pull-right">
+                        <button class="btn btn-primary main_bg_cor seat_sec_opn" target="1">Select Seat</button>
+                        <p class="seat-res-p">16 Seat Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="seat_sec_file1" class="seat_layout">
+            <div class="container">
+                <div class="booking_seat">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="bus_border">
+                                <div class="seatWrap">
+                                    <div class="drive_seat"> <img src="image/drive-seat.png" alt="" /> </div>
+                                    <div class="seats">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 1"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 2"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="pull-right seat_active">
+                                                            <div class="seat_layer"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat_info">
+                                <ul>
+                                    <li class="">Available</li>
+                                    <li class="">Selected</li>
+                                    <li class="">Unavailable</li>
+                                    <li class="">For Ladies</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="booking_inner">
+                                <div class="row">
+                                    <div class="col-md-6"> <span> Boarding Point</span>
+                                        <select class="form-control">
+                                            <option>aaaaa</option>
+                                            <option>bbbbb</option>
+                                            <option>ccccc</option>
+                                            <option>ddddd</option>
+                                            <option>eeeee</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6"> <span> Dropping Point </span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row seat_no">
+                                    <div class="col-md-6">Seat No</div>
+                                    <div class="col-md-6">1,2,3,4</div>
+                                </div>
+                                <div class="row seat_pay">
+                                    <div class="col-md-6">Total Amount</div>
+                                    <div class="col-md-6"><span>&#8377;</span> 1000</div>
+                                </div>
+                                <button class="btn btn-primary">Proceed Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="search_res">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Service 76</p>
+                    <p class="seat-res-p">2+2, Platinum Class,AC, LED</p>
+                </div>
+                <div class="col-md-2 dt_info">
+                    <p>13.50</p> <img src="image/Arrow_Forward.png" alt="" />
+                    <p>10.25</p>
+                    <div class="clearfix"></div>
+                    <p class="seat-res-p">10.45 Hours</p>
+                </div>
+                <div class="col-md-3">
+                    <ul class="amenities">
+                        <li><img src="image/amet_01.png" alt="" /></li>
+                        <li><img src="image/amet_03.png" alt="" /></li>
+                        <li><img src="image/amet_05.png" alt="" /></li>
+                        <li><img src="image/ame_01.png" alt="" /></li>
+                        <li><img src="image/ame_03.png" alt="" /></li>
+                        <li><img src="image/ame_05.png" alt="" /></li>
+                    </ul>
+                    <!--
+                    <div class="dropdown seat-res-p">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="main_tx_cr">
+                            <span> Boarding and Dropping Point</span>
+                            <div class="dropd" style="right:4rem;"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+--></div>
+                <div class="col-md-2">
+                    <p><span>&#8377;</span> 1000</p>
+                    <p class="seat-res-p main_tx_cr"> Cancellation Policy</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="pull-right">
+                        <button class="btn btn-primary main_bg_cor seat_sec_opn" target="2">Select Seat</button>
+                        <p class="seat-res-p">16 Seat Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="seat_sec_file2" class="seat_layout">
+            <div class="container">
+                <div class="booking_seat">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="bus_border">
+                                <div class="seatWrap">
+                                    <div class="drive_seat"> <img src="image/drive-seat.png" alt="" /> </div>
+                                    <div class="seats">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 1"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 2"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="pull-right seat_active">
+                                                            <div class="seat_layer"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat_info">
+                                <ul>
+                                    <li class="">Available</li>
+                                    <li class="">Selected</li>
+                                    <li class="">Unavailable</li>
+                                    <li class="">For Ladies</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="booking_inner">
+                                <div class="row">
+                                    <div class="col-md-6"> <span> Boarding Point</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6"> <span> Dropping Point </span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row seat_no">
+                                    <div class="col-md-6">Seat No</div>
+                                    <div class="col-md-6">1,2,3,4</div>
+                                </div>
+                                <div class="row seat_pay">
+                                    <div class="col-md-6">Total Amount</div>
+                                    <div class="col-md-6"><span>&#8377;</span> 1000</div>
+                                </div>
+                                <button class="btn btn-primary">Proceed Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="search_res">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Service 77</p>
+                    <p class="seat-res-p">2+2, Platinum Class,AC, LED</p>
+                </div>
+                <div class="col-md-2 dt_info">
+                    <p>13.50</p> <img src="image/Arrow_Forward.png" alt="" />
+                    <p>10.25</p>
+                    <div class="clearfix"></div>
+                    <p class="seat-res-p">10.45 Hours</p>
+                </div>
+                <div class="col-md-3">
+                    <ul class="amenities">
+                        <li><img src="image/amet_01.png" alt="" /></li>
+                        <li><img src="image/amet_03.png" alt="" /></li>
+                        <li><img src="image/amet_05.png" alt="" /></li>
+                        <li><img src="image/ame_01.png" alt="" /></li>
+                        <li><img src="image/ame_03.png" alt="" /></li>
+                        <li><img src="image/ame_05.png" alt="" /></li>
+                    </ul>
+                    
+                    <!--
+                    <div class="dropdown seat-res-p">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="main_tx_cr">
+                            <span> Boarding and Dropping Point</span>
+                            <div class="dropd" style="right:4rem;"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+--></div>
+                <div class="col-md-2">
+                    <p><span>&#8377;</span> 1000</p>
+                    <p class="seat-res-p main_tx_cr"> Cancellation Policy</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="pull-right">
+                        <button class="btn btn-primary main_bg_cor seat_sec_opn" target="3">Select Seat</button>
+                        <p class="seat-res-p">16 Seat Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="seat_sec_file3" class="seat_layout">
+            <div class="container">
+                <div class="booking_seat">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="bus_border">
+                                <div class="seatWrap">
+                                    <div class="drive_seat"> <img src="image/drive-seat.png" alt="" /> </div>
+                                    <div class="seats">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 1"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer tip-top" data-original-title="Seat No 2"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="no_seats"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="pull-right seat_active">
+                                                            <div class="seat_layer"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="seat_layer"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat_info">
+                                <ul>
+                                    <li class="">Available</li>
+                                    <li class="">Selected</li>
+                                    <li class="">Unavailable</li>
+                                    <li class="">For Ladies</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="booking_inner">
+                                  <div class="row">
+                                    <div class="col-md-6"> <span> Boarding Point</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6"> <span> Dropping Point </span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row seat_no">
+                                    <div class="col-md-6">Seat No</div>
+                                    <div class="col-md-6">1,2,3,4</div>
+                                </div>
+                                <div class="row seat_pay">
+                                    <div class="col-md-6">Total Amount</div>
+                                    <div class="col-md-6"><span>&#8377;</span> 1000</div>
+                                </div>
+                                <button class="btn btn-primary">Proceed Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="search_res">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Service 78</p>
+                    <p class="seat-res-p">2+1, Platinum Class,AC, Sleeper </p>
+                </div>
+                <div class="col-md-2 dt_info">
+                    <p>13.50</p> <img src="image/Arrow_Forward.png" alt="" />
+                    <p>10.25</p>
+                    <div class="clearfix"></div>
+                    <p class="seat-res-p">10.45 Hours</p>
+                </div>
+                <div class="col-md-3">
+                    <ul class="amenities">
+                        <li><img src="image/amet_01.png" alt="" /></li>
+                        <li><img src="image/amet_03.png" alt="" /></li>
+                        <li><img src="image/amet_05.png" alt="" /></li>
+                        <li><img src="image/ame_01.png" alt="" /></li>
+                        <li><img src="image/ame_03.png" alt="" /></li>
+                        <li><img src="image/ame_05.png" alt="" /></li>
+                    </ul>
+                    <!--
+                    <div class="dropdown seat-res-p">
+                        <div id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="main_tx_cr">
+                            <span> Boarding and Dropping Point</span>
+                            <div class="dropd" style="right:4rem;"></div>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+--></div>
+                <div class="col-md-2">
+                    <p><span>&#8377;</span> 1500</p>
+                    <p class="seat-res-p main_tx_cr"> Cancellation Policy</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="pull-right">
+                        <button class="btn btn-primary main_bg_cor seat_sec_opn" target="4">Select Seat</button>
+                        <p class="seat-res-p">16 Seat Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="seat_sec_file4" class="seat_layout">
+            <div class="container">
+                <div class="booking_seat">
+                    <div class="row">
+                        <div class="col-md-7" style="padding-top: 2rem;">
+                            <div class="sleeper-base"> <span>lower Deck</span>
+                                <br/>
+                                <div class="bus_border sleeper-outer">
+                                    <div class="seatWrap sleeperwrap">
+                                        <div class="drive_seat"> <img src="image/drive-seat.png" alt="" /> </div>
+                                        <div class="sleeper">
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <span>Upper Deck</span>
+                                <br/>
+                                <div class="bus_border sleeper-outer">
+                                    <div class="seatWrap sleeperwrap">
+                                        <div class="sleeper">
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                                <li class="sleeper_seat_active">
+                                                    <div class="sleeper_layer"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sleeper_info">
+                                <ul>
+                                    <li class="">Available</li>
+                                    <li class="">Selected</li>
+                                    <li class="">Unavailable</li>
+                                    <li class="">For Ladies</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="booking_inner">
+                                   <div class="row">
+                                    <div class="col-md-6"> <span> Boarding Point</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6"> <span> Dropping Point </span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row seat_no">
+                                    <div class="col-md-6">Seat No</div>
+                                    <div class="col-md-6">1,2,3,4</div>
+                                </div>
+                                <div class="row seat_pay">
+                                    <div class="col-md-6">Total Amount</div>
+                                    <div class="col-md-6"><span>&#8377;</span> 1000</div>
+                                </div>
+                                <button class="btn btn-primary">Proceed Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section> &nbsp;
+    <section>
+        <div class="container">
+            <div class="row suggestions">
+                <hr />
+                <h3 class="text-center"> For Bookings, Suggestions, Complaints and Boarding point assistance </h3>
+                <div class="col-md-4">
+                    <div class="phone">
+                        <p>+91 9248067444</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="landline">
+                        <p>0863 - 6537444 / 6455556 </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="message">
+                        <p>info.yamanitravels@gmail.com</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr /> </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footerLinks">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>ABOUT TRAVELS</h4></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Schedules</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Trabol</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>INFORMATION </h4></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Agent Registration</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 mob">
+                    <h4 class="text-right">Follow us</h4>
+                    <ul class="social text-right">
+                        <li>
+                            <a href="#"><img src="image/facebook.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/in.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/sco.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/youtube.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/pin.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>&copy; 2017 Travel.com. All Rights Reserved.</h4> </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4 class="text-right">Powered By TicketSimply™</h4> </div>
+            </div>
+        </div>
+    </section>
+    <!-- chat  -->
+    <button class="chat" id="chatBox"> <strong>Start chat</strong> </button>
+    <div class="chatWindow"> <img src="image/minus.png" alt="" class="mimize" />
+        <iframe src="chat.html" width="300" height="381" style="border:0"></iframe>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

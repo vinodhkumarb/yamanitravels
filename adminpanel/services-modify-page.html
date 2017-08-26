@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery.gritter.css" />
+    <link rel="stylesheet" href="css/colorpicker.css" />
+    <link rel="stylesheet" href="css/jquery.gritter.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/uniform.css" />
+    <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/admin_style.css" />
+    <link rel="stylesheet" href="css/admin_media.css" />
+</head>
+
+<body>
+
+
+    <!-- header part start -->
+        <header>
+        <div class="container-fluid">
+            <div class="row-fluid margin0">
+                <div class="span4">
+                    <div class="logo">
+                         <i class="fa fa-bars fa-4x" id="openNav"></i>
+                        <a href="index.html"> <img src="images/logo.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="span8">
+                    <div id="user-nav" class="navbar navbar-inverse">
+                        <ul class="nav">
+                            <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="fa fa-user-o"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-user-o"></i> My Profile</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-check"></i> My Tasks</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-lock"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="fa fa-envelope-o"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="sAdd" title="" href="#"><i class="fa fa-plus"></i> new message</a></li>
+                                    <li class="divider"></li>
+                                    <li><a class="sInbox" title="" href="#"><i class="fa fa-envelope-o"></i> inbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a class="sOutbox" title="" href="#"><i class="fa fa-arrow-up"></i> outbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a class="sTrash" title="" href="#"><i class="fa fa-trash-o"></i> trash</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a title="" href="#"><i class="fa fa-gear"></i> <span class="text">Settings</span></a></li>
+                            <li class=""><a title="" href="login.html"><i class="fa fa-lock"></i> <span class="text">Logout</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="clock">
+                        <h5>Sun 14 May 4.13pm </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header part end -->
+
+
+    <div class="row-fluid margin0">
+        <div class="side_left">
+            <div class="side_menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-dashboard fa-3x"></i><span>Dashboard</span></a></li>
+                    <li><a href="booking.html"><i class="fa fa fa-bus fa-3x"></i><span>Bookings</span></a></li>
+                    <li>
+                        <div class="sub_op_me"><a href="#"><i class="fa fa-truck fa-3x"></i><span>Manage</span></a>
+                            <ul class="sub_file_menu">
+                                <li><a href="#">Route Management</a></li>
+                                <li><a href="coaches.html">Coach Management</a></li>
+                                <li><a href="travel-branches.html">Branch Management</a></li>
+                                <li><a href="coach-types.html">Coach Type Management</a></li>
+                                <li><a href="#">Service Management</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sub_op_me"><a href="#"><i class="fa fa-user-circle fa-3x"></i><span>Profile</span></a>
+                            <ul class="sub_file_menu">
+                                <li><a href="admin-user.html">User Profiles</a></li>
+                                <li><a href="admin-agents.html">Agent Profiles</a></li>
+                                <li><a href="#">Staff Profiles</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa fa-truck fa-3x"></i><span>Cargo</span></a></li>
+                    <li><a href=""><i class="fa fa-line-chart fa-3x"></i><span>Reports</span></a></li>
+                    <li>
+                        <div class="sub_op_me"><a href="#"><i class="fa fa-dashboard fa-3x"></i><span>Offer</span></a>
+
+                            <ul class="sub_file_menu">
+                                <li><a href="#">Create Coupon</a></li>
+                                <li><a href="#">View Coupon</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sub_op_me"><a href="#" class="sub_op_me"><i class="fa fa-dashboard fa-3x"></i><span>Content</span></a>
+                            <ul class="sub_file_menu">
+                                <li><a href="#">Add Abouts</a></li>
+                                <li><a href="#">terms and conditions</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">Fare Rules</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Help / Customer Support</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa fa-gears fa-3x"></i><span>Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_right">
+            <div class="content_body">
+                <div id="">
+                    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+                        <div class="pull-right quick_links"><span id="quicklinks">Quick Links <i class="icon-sort-down"></i> </span></div>
+                    </div>
+                </div>
+                <div class="quks_open">
+                    <h5>Agent</h5>
+                    <ul>
+                        <li><a href="">Agents Details</a></li>
+                        <li><a href="">Agents Simply</a></li>
+                    </ul>
+                    <h5>Booking</h5>
+                    <ul>
+                        <li><a href="">Alerts</a></li>
+                        <li><a href="">Blocking History</a></li>
+                        <li><a href="">Bulk Trip Details</a></li>
+                        <li><a href="">Pending Confirmation</a></li>
+                        <li><a href="">Pending API Tickets</a></li>
+                        <li><a href="">Ticket History</a></li>
+                        <li><a href=""> Track Your Bus</a></li>
+                    </ul>
+                    <h5>Manage</h5>
+                    <ul>
+                        <li><a href="">Cancelled Services</a></li>
+                        <li><a href="">Forms</a></li>
+                        <li><a href="">Full Screen</a></li>
+                        <li><a href="">My Activity</a></li>
+                        <li><a href="">Notify</a></li>
+                        <li><a href="">Requests Received</a></li>
+                        <li><a href="">Switch User</a></li>
+                    </ul>
+                    <h5>Charts & Reports</h5>
+                    <ul>
+                        <li><a href="">Expenses/Incomes</a></li>
+                        <li><a href="">Occupancy Forecast</a></li>
+                        <li><a href="">Daily Transaction Report</a></li>
+                    </ul>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="widget-box">
+                            <div class="widget-title bg_lg"><span class="icon"><i class="fa fa-navicon"></i></span>
+                                <h5>Services</h5>
+                            </div>
+                            <div class="widget-content">
+                                <div class="row-fluid margin0">
+                                    <div class="span12">
+                                        <h3>22 on 20/05/2017 (Saturday)</h3>
+                                        <p>Running: NO. Updated on 19/05/2017 11:56 AM</p>
+                                        <div class="widget-box">
+                                            <div class="widget-title">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a data-toggle="tab" href="#tab1">General Info</a></li>
+                                                    <li><a data-toggle="tab" href="#tab2">Routes & fares</a></li>
+                                                    <li><a data-toggle="tab" href="#tab3">Stages</a></li>
+                                                    <li><a data-toggle="tab" href="#tab4">View History</a></li>
+                                                    <li><a data-toggle="tab" href="#tab5">Manage Captain Details</a></li>
+                                                    <li><a data-toggle="tab" href="#tab6">View Chart</a></li>
+                                                    <li><a data-toggle="tab" href="#tab7">Fares History</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="widget-content tab-content">
+                                                <div id="tab1" class="tab-pane active">
+                                                    <div class="widget-box">
+                                                        <div class="widget-title bg_lg"><span class="icon"><i class="fa fa-navicon"></i></span>
+                                                            <h5 class="pull-left">General Info</h5>
+                                                            <div class="pull-right ser-mod-re-bt">
+                                                                <button class="btn"><i class="fa fa-edit"></i>Edit</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="widget-content">
+                                                            <form action="#" method="get" class="form-horizontal">
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Service Number :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" value="info.yamanitravels@gmail.com" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Coach Type :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" value="New Non A/c Hitech 2+2" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Operator Service Name :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" placeholder="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Availability :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" value="40 (of 40)" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Allow Cancellation</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Gents To Book Next To Ladies
+                                                                    </label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Phone Booking Allowed
+                                                                    </label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Phone Blocking Hours</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>0</option>
+                                                                            <option>5</option>
+                                                                            <option>24</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Stage Contact Number :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" placeholder="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Sms Numbers :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" placeholder="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Allow Seperate Stages :</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Hide coach layout in Public website :</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pull-right">
+                                                                    <button class="btn btn-primary">Update</button>
+                                                                    <button class="btn">Cancel</button>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-box">
+                                                        <div class="widget-title bg_lg"><span class="icon"><i class="fa fa-navicon"></i></span>
+                                                            <h5 class="pull-left">Agent Types</h5>
+                                                            <div class="pull-right ser-mod-re-bt">
+                                                                <button class="btn"><i class="fa fa-edit"></i>Edit</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="widget-content">
+                                                            <form action="#" method="get" class="form-horizontal">
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Online :
+                                                                    </label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" value="" placeholder="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Offline :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" placeholder="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Api Limit :</label>
+                                                                    <div class="controls">
+                                                                        <input type="text" class="span4" placeholder="" />
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="pull-right">
+                                                                    <button class="btn btn-primary">Update</button>
+                                                                    <button class="btn">Cancel</button>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-box">
+                                                        <div class="widget-title bg_lg"><span class="icon"><i class="fa fa-navicon"></i></span>
+                                                            <h5 class="pull-left">Booking Options</h5>
+                                                        </div>
+                                                        <div class="widget-content">
+                                                            <form action="#" method="get">
+                                                                <div class="control-group">
+                                                                    <div class="controls">
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" checked/> E-Ticketing Allowed</label>
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" checked/> Online Agents Allowed </label>
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" checked/> Allow API Agent Booking </label>
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" checked/> Branch User Allowed </label>
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" checked/> Offline Allowed </label>
+                                                                        <label>
+                                                                            <input type="checkbox" name="radios" />Is Special Service </label>
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="tab2" class="tab-pane routes_fares">
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span12">
+                                                            <h4><i class="fa fa-map-signs"></i> Guntur - Hyderabad</h4>
+                                                            <hr />
+                                                            <form>
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="control-group">
+                                                                            <label class="control-label">Departure</label>
+                                                                            <div class="controls">
+                                                                                <select>
+                                                                                    <option value="00:05">00:05</option>
+                                                                                    <option value="00:10">00:10</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="control-group">
+                                                                            <label class="control-label">Arrival</label>
+                                                                            <div class="controls">
+                                                                                <select>
+                                                                                    <option value="00:05">00:05</option>
+                                                                                    <option value="00:10">00:10</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="control-group">
+                                                                            <label class="control-label">Days</label>
+                                                                            <div class="controls">
+                                                                                <select>
+                                                                                    <option>0</option>
+                                                                                    <option>1</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="control-group">
+                                                                            <label class="control-label">Duration</label>
+                                                                            <div class="controls">
+                                                                                <select>
+                                                                                    <option value="00:05">00:05</option>
+                                                                                    <option value="00:10">00:10</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="tie-up-for">
+                                                                    <li>Tie Up For</li>
+                                                                    <li>
+                                                                        <div class="controls">
+                                                                            <select>
+                                                                                <option value="-1">- Select -</option>
+                                                                                <option value="1">Tie Up Operator</option>
+                                                                                <option value="2">Tie Up Branch</option>
+                                                                                <option value="3">Tie Up Agent</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>Tie Up Amount Type</li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" /> Percent</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" />Fixed</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Amount</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" placeholder="" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-primary">Apply</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>Apply Commission By</li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" /> Percent</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" />Fixed</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Amount</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" placeholder="" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-primary">Apply</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>Apply Inc/Dec of Fare /Time by</li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" /> Fare</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" />Time</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" /> Increment </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>
+                                                                            <input type="radio" name="radios" />Decrement</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label>Amount</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" placeholder="" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-primary">Apply</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </form>
+
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                                            <table class="table table-bordered table-striped rou-far-tab-ma">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Origin</th>
+                                                                        <th>Destination</th>
+                                                                        <th>Departure</th>
+                                                                        <th>Arrival</th>
+                                                                        <th>Durations</th>
+                                                                        <th width="200">Fare</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><span>Guntur</span> <i class="fa fa-map-marker"></i>
+                                                                            <div><a href="">Trip details</a></div>
+                                                                        </td>
+                                                                        <td><span>Hyderabad</span> <i class="fa fa-map-pin"></i></td>
+                                                                        <td>22.00</td>
+                                                                        <td>
+                                                                            <div>05.45<span>(0 Days)</span></div>
+                                                                            <div>Next Days : <span>Yes</span> <a href=""><i class="fa fa-pencil"></i> </a></div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><span>06:40</span>
+                                                                                <a href=""> <i class="fa fa-pencil"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <table class="tie-inr-tabe">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Type</th>
+                                                                                            <th>Fare</th>
+                                                                                            <th>Comm %</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>SS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>BS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><a href=""><i class="fa fa-plus"></i></a></div>
+                                                                            <div><a href=""><i class="fa fa-trash-o"></i></a></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span>Guntur</span> <i class="fa fa-map-marker"></i>
+                                                                            <div><a href="">Trip details</a></div>
+                                                                        </td>
+                                                                        <td><span>Hyderabad</span> <i class="fa fa-map-pin"></i></td>
+                                                                        <td>22.00</td>
+                                                                        <td>
+                                                                            <div>05.45<span>(0 Days)</span></div>
+                                                                            <div>Next Days : <span>Yes</span> <a href=""><i class="fa fa-pencil"></i> </a></div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><span>06:40</span>
+                                                                                <a href=""> <i class="fa fa-pencil"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <table class="tie-inr-tabe">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Type</th>
+                                                                                            <th>Fare</th>
+                                                                                            <th>Comm %</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>SS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>BS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><a href=""><i class="fa fa-plus"></i></a></div>
+                                                                            <div><a href=""><i class="fa fa-trash-o"></i></a></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span>Guntur</span> <i class="fa fa-map-marker"></i>
+                                                                            <div><a href="">Trip details</a></div>
+                                                                        </td>
+                                                                        <td><span>Hyderabad</span> <i class="fa fa-map-pin"></i></td>
+                                                                        <td>22.00</td>
+                                                                        <td>
+                                                                            <div>05.45<span>(0 Days)</span></div>
+                                                                            <div>Next Days : <span>Yes</span> <a href=""><i class="fa fa-pencil"></i> </a></div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><span>06:40</span>
+                                                                                <a href=""> <i class="fa fa-pencil"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <table class="tie-inr-tabe">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Type</th>
+                                                                                            <th>Fare</th>
+                                                                                            <th>Comm %</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>SS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>BS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><a href=""><i class="fa fa-plus"></i></a></div>
+                                                                            <div><a href=""><i class="fa fa-trash-o"></i></a></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><span>Guntur</span> <i class="fa fa-map-marker"></i>
+                                                                            <div><a href="">Trip details</a></div>
+                                                                        </td>
+                                                                        <td><span>Hyderabad</span> <i class="fa fa-map-pin"></i></td>
+                                                                        <td>22.00</td>
+                                                                        <td>
+                                                                            <div>05.45<span>(0 Days)</span></div>
+                                                                            <div>Next Days : <span>Yes</span> <a href=""><i class="fa fa-pencil"></i> </a></div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><span>06:40</span>
+                                                                                <a href=""> <i class="fa fa-pencil"></i></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <table class="tie-inr-tabe">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Type</th>
+                                                                                            <th>Fare</th>
+                                                                                            <th>Comm %</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>SS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>BS</td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" placeholder="" />
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div><a href=""><i class="fa fa-plus"></i></a></div>
+                                                                            <div><a href=""><i class="fa fa-trash-o"></i></a></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <button class="btn btn-primary"><i class="fa fa-plus"></i> Add Multi Station</button>
+                                                            <hr />
+                                                            <form>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>
+                                                                        <label>Via</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <textarea></textarea>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-primary"> Apply automatically</button>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>
+                                                                        <label>Reason / comments </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <textarea></textarea>
+                                                                    </li>
+                                                                </ul>
+                                                            </form>
+                                                            <hr />
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                            <p> <b>SS</b> => Semi Sleeper ,
+                                                                <b>LB</b> => Lower Berth ,
+                                                                <b>UB</b> => Upper Berth,
+                                                                <b>NA</b> => Un Reservable Seat ,
+                                                                <b>GY</b> => Gangway ,
+                                                                <b>BS</b> => Back Seat ,
+                                                                <b>NPB</b> => No Push Back ,
+                                                                <b>PB</b> => Push Back ,
+                                                                <b>SLB</b> => Side Lower Berth ,
+                                                                <b>SUB</b> => Side Upper Berth ,
+                                                                <b>SST</b> => Single Seat ,
+                                                                <b>BR</b> => Break ,
+                                                                <b>ST</b> => Seater ,
+                                                                <b>DLB</b> => Double Lower Berth ,
+                                                                <b>DUB</b> => Double Upper Berth ,
+                                                                <b>WSS</b> => Window Semi Sleeper ,
+                                                                <b>WST</b> => Window Seater ,
+                                                                <b>WLB</b> => Window Lower Berth ,
+                                                                <b>WUB</b> => Window Upper Berth ,
+                                                                <b>WSL</b> => Window Single Lower ,
+                                                                <b>WSU</b> => Window Single Upper ,
+                                                                <b>BU</b> => Business Class ,
+                                                                <b>EC</b> => Economy Class</p>
+                                                            <hr />
+                                                            <p>Change the sequence of the cites which the route runs </p>
+                                                            <div>
+                                                                <ul class="tie_comm-ul">
+                                                                    <li>
+                                                                        <div class="control-group">
+                                                                            <label class="control-label">Multi Hope ?</label>
+                                                                            <div class="controls">
+                                                                                <select>
+                                                                                    <option value="00:05">Yes</option>
+                                                                                    <option value="00:10">No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <button class="btn btn-primary">Update</button>
+                                                            <button class="btn">Cancel</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="tab3" class="tab-pane">
+                                                    <div class="row-fluid margin0 stages">
+                                                        <div class="span12">
+                                                            <div class="pull-left">
+                                                                <h4>Stages</h4>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button class="btn btn-primary" id="serv-sear">Search</button>
+                                                                <button class="btn btn-primary">Create New</button>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <hr />
+                                                            <div class="serv_sea">
+                                                                <form>
+                                                                    <input type="text" placeholder="Search Terms" />
+                                                                    <button class="btn btn-primary">Search</button>
+                                                                    <button class="btn">Reset</button>
+                                                                    <i class="fa fa-window-close fa-2x pull-right" id="close"></i>
+                                                                </form>
+
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Contact Details</th>
+                                                                        <th>City</th>
+                                                                        <th>Stage Type</th>
+                                                                        <th>Time</th>
+                                                                        <th>Address</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div>brindavan garden</div>
+                                                                            <div>near ayyappa Swamy temple</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>yamanitravels</div>
+                                                                            <div>+91 9876543210</div>
+                                                                        </td>
+                                                                        <td>Guntur</td>
+                                                                        <td>Boarding at</td>
+                                                                        <td>10.00 Pm</td>
+                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Edit</a>
+                                                                            <a href="">Delete</a>
+                                                                            <a class="sta-info" target="info-1">Show</a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr class="stage_info" id="st-info-1">
+                                                                        <td colspan="7">
+                                                                            <div class="pull-left">
+                                                                                <h5>brindavan garden</h5>
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                                <i class="fa fa-window-close fa-2x pull-right close-stage" id="close-stage"></i>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                            <hr />
+
+                                                                            <table class="stage_info_tab">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Name :</td>
+                                                                                        <td>sdgdtehyrj</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Details :</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Number</td>
+                                                                                        <td>+91 9876543210</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Persons</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Landmark</td>
+                                                                                        <td>near ayyappa Swamy temple</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Pincode</td>
+                                                                                        <td>0000000</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Route</td>
+                                                                                        <td>Guntur - Hyderabad</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Reason / comments</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Stage Type</td>
+                                                                                        <td>Boarding point</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Time</td>
+                                                                                        <td>10.00 Pm</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is next day</td>
+                                                                                        <td>0</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is Pick up</td>
+                                                                                        <td>1</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>reservation</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>latitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>longitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Address</td>
+                                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div>brindavan garden</div>
+                                                                            <div>near ayyappa Swamy temple</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>yamanitravels</div>
+                                                                            <div>+91 9876543210</div>
+                                                                        </td>
+                                                                        <td>Guntur</td>
+                                                                        <td>Boarding at</td>
+                                                                        <td>10.00 Pm</td>
+                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Edit</a>
+                                                                            <a href="">Delete</a>
+                                                                            <a class="sta-info" target="info-2">Show</a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr class="stage_info" id="st-info-2">
+                                                                        <td colspan="7">
+                                                                            <div class="pull-left">
+                                                                                <h5>brindavan garden</h5>
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                                <i class="fa fa-window-close fa-2x pull-right close-stage" id="close-stage" onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'></i>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                            <hr />
+
+                                                                            <table class="stage_info_tab">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Name :</td>
+                                                                                        <td>sdgdtehyrj</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Details :</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Number</td>
+                                                                                        <td>+91 9876543210</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Persons</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Landmark</td>
+                                                                                        <td>near ayyappa Swamy temple</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Pincode</td>
+                                                                                        <td>0000000</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Route</td>
+                                                                                        <td>Guntur - Hyderabad</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Reason / comments</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Stage Type</td>
+                                                                                        <td>Boarding point</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Time</td>
+                                                                                        <td>10.00 Pm</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is next day</td>
+                                                                                        <td>0</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is Pick up</td>
+                                                                                        <td>1</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>reservation</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>latitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>longitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Address</td>
+                                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div>brindavan garden</div>
+                                                                            <div>near ayyappa Swamy temple</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>yamanitravels</div>
+                                                                            <div>+91 9876543210</div>
+                                                                        </td>
+                                                                        <td>Guntur</td>
+                                                                        <td>Boarding at</td>
+                                                                        <td>10.00 Pm</td>
+                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Edit</a>
+                                                                            <a href="">Delete</a>
+                                                                            <a class="sta-info" target="info-3">Show</a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr class="stage_info" id="st-info-3">
+                                                                        <td colspan="7">
+                                                                            <div class="pull-left">
+                                                                                <h5>brindavan garden</h5>
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                                <i class="fa fa-window-close fa-2x pull-right close-stage" id="close-stage" onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'></i>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                            <hr />
+
+                                                                            <table class="stage_info_tab">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Name :</td>
+                                                                                        <td>sdgdtehyrj</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Details :</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Number</td>
+                                                                                        <td>+91 9876543210</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Persons</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Landmark</td>
+                                                                                        <td>near ayyappa Swamy temple</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Pincode</td>
+                                                                                        <td>0000000</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Route</td>
+                                                                                        <td>Guntur - Hyderabad</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Reason / comments</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Stage Type</td>
+                                                                                        <td>Boarding point</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Time</td>
+                                                                                        <td>10.00 Pm</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is next day</td>
+                                                                                        <td>0</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is Pick up</td>
+                                                                                        <td>1</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>reservation</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>latitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>longitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Address</td>
+                                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div>brindavan garden</div>
+                                                                            <div>near ayyappa Swamy temple</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>yamanitravels</div>
+                                                                            <div>+91 9876543210</div>
+                                                                        </td>
+                                                                        <td>Guntur</td>
+                                                                        <td>Boarding at</td>
+                                                                        <td>10.00 Pm</td>
+                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Edit</a>
+                                                                            <a href="">Delete</a>
+                                                                            <a class="sta-info" target="info-4">Show</a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr class="stage_info" id="st-info-4">
+                                                                        <td colspan="7">
+                                                                            <div class="pull-left">
+                                                                                <h5>brindavan garden</h5>
+                                                                            </div>
+                                                                            <div class="pull-right">
+                                                                                <i class="fa fa-window-close fa-2x pull-right close-stage" id="close-stage" onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'></i>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                            <hr />
+
+                                                                            <table class="stage_info_tab">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Name :</td>
+                                                                                        <td>sdgdtehyrj</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Details :</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Number</td>
+                                                                                        <td>+91 9876543210</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Contact Persons</td>
+                                                                                        <td>yamanitravels</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Landmark</td>
+                                                                                        <td>near ayyappa Swamy temple</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Pincode</td>
+                                                                                        <td>0000000</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Route</td>
+                                                                                        <td>Guntur - Hyderabad</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Reason / comments</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Stage Type</td>
+                                                                                        <td>Boarding point</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Time</td>
+                                                                                        <td>10.00 Pm</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is next day</td>
+                                                                                        <td>0</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Is Pick up</td>
+                                                                                        <td>1</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>reservation</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>latitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>longitude</td>
+                                                                                        <td>-</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Address</td>
+                                                                                        <td>brindavan gardens guntur , andhra pradesh , Guntur</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="tab4" class="tab-pane">
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span12">
+                                                            <h4>History</h4>
+                                                            <div class="pull-left">
+                                                                <h4>Ticket History</h4>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button class="btn btn-primary" id="serv-sear">Search</button>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <hr />
+                                                            <div class="serv_sea">
+                                                                <form>
+                                                                    <input type="text" placeholder="Search Terms" />
+                                                                    <button class="btn btn-primary">Search</button>
+                                                                    <button class="btn">Reset</button>
+                                                                    <i class="fa fa-window-close fa-2x pull-right" id="close"></i>
+                                                                </form>
+
+                                                                <div class="clearfix"></div>
+                                                            </div>
+
+
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2 Found</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+                                                <div id="tab5" class="tab-pane">
+
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span12">
+
+                                                            <div class="pull-left">
+                                                                <h4>Manage Captain Details</h4>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <hr />
+
+
+                                                            <form action="#" method="get" class="form-horizontal">
+
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Captain 1 </label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Default Chart</option>
+                                                                            <option>Group By Pickup</option>
+                                                                            <option>Group By PNR</option>
+                                                                            <option>Group By PNR &amp; Pickup</option>
+                                                                            <option>B3-Type1</option>
+                                                                            <option>B3-Type2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Captain 2</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Default Chart</option>
+                                                                            <option>Group By Pickup</option>
+                                                                            <option>Group By PNR</option>
+                                                                            <option>Group By PNR &amp; Pickup</option>
+                                                                            <option>B3-Type1</option>
+                                                                            <option>B3-Type2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Attendent</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Default Chart</option>
+                                                                            <option>Group By Pickup</option>
+                                                                            <option>Group By PNR</option>
+                                                                            <option>Group By PNR &amp; Pickup</option>
+                                                                            <option>B3-Type1</option>
+                                                                            <option>B3-Type2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Cleaner</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Default Chart</option>
+                                                                            <option>Group By Pickup</option>
+                                                                            <option>Group By PNR</option>
+                                                                            <option>Group By PNR &amp; Pickup</option>
+                                                                            <option>B3-Type1</option>
+                                                                            <option>B3-Type2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label class="control-label">Checking Inspector</label>
+                                                                    <div class="controls">
+                                                                        <select class="span4">
+                                                                            <option>Default Chart</option>
+                                                                            <option>Group By Pickup</option>
+                                                                            <option>Group By PNR</option>
+                                                                            <option>Group By PNR &amp; Pickup</option>
+                                                                            <option>B3-Type1</option>
+                                                                            <option>B3-Type2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="control-group">
+                                                                    <label class="control-label"></label>
+                                                                    <div class="controls">
+                                                                        <button class="btn btn-primary">Update</button>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </form>
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div id="tab6" class="tab-pane">
+
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span12">
+                                                            <div class="routes_fares">
+                                                                <ul class="tie_comm-ul">
+                                                                    <li><a href="">Print Passenger List</a></li>
+                                                                    <li><a href="">Shift Passenger</a></li>
+                                                                    <li><a href="">Rto Passenger Details</a></li>
+                                                                    <li><a href="">Lock</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span4">
+                                                            <ul class="tie_comm-ul">
+                                                                <li>Print Passenger List : <b>23/05/2017</b></li>
+                                                                <li>Services : <b> 22 (Guntur - Hyderabad)</b></li>
+                                                                <li>Origin : <b>Guntur</b></li>
+                                                                <li>Destination : <b>Hyderabad</b></li>
+                                                                <li>Departure : <b>10:00 PM</b></li>
+                                                                <li>Journey Time : <b>04:45 Hours</b></li>
+                                                                <li>Dropping Point : <b> - </b></li>
+                                                                <li>Boarding Point : <b> - </b></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="span4">
+                                                            <ul class="tie_comm-ul tie-coa-no">
+                                                                <li>
+                                                                    <div class="pull-left"> Coach No : </div>
+                                                                    <div class="pull-left">
+                                                                        <select>
+                                                                            <option> - select - </option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <button class="btn">Apply</button>
+                                                                    <div class="clearfix"></div>
+                                                                </li>
+                                                                <li><b>2+2, Platinum Class,AC, LED</b></li>
+                                                                <li>Driver 1 : <b> - </b></li>
+                                                                <li>Driver 2 : <b> - </b></li>
+                                                                <li>Cleaner : <b> - </b></li>
+                                                                <li>Contractor : <b> - </b></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="span4">
+                                                            <ul class="tie_comm-ul">
+                                                                <li>Seat : <b>40</b></li>
+                                                                <li>Reserved : <b>0</b></li>
+                                                                <li>UnReserved : <b>40</b></li>
+                                                                <li>Blocked : <b>40</b></li>
+                                                                <li>Pending : <b>0</b> </li>
+                                                                <li>Boarded Count : <b>0</b></li>
+                                                                <li>Un Boarded Count : <b>0</b></li>
+                                                                <li>Connecting Service : <b>0</b></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row-fluid view-chart">
+                                                        <div class="span4">
+                                                            <div class="control-group">
+                                                                <label class="control-label">Filter By : </label>
+                                                                <div class="controls">
+                                                                    <select class="span6">
+                                                                        <option>Default Chart</option>
+                                                                        <option>Group By Pickup</option>
+                                                                        <option>Group By PNR</option>
+                                                                        <option>Group By PNR &amp; Pickup</option>
+                                                                        <option>B3-Type1</option>
+                                                                        <option>B3-Type2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="span4">
+                                                            <div class="control-group">
+                                                                <label class="control-label">Origin : </label>
+                                                                <div class="controls">
+                                                                    <select class="span6">
+                                                                        <option>Default Chart</option>
+                                                                        <option>Group By Pickup</option>
+                                                                        <option>Group By PNR</option>
+                                                                        <option>Group By PNR &amp; Pickup</option>
+                                                                        <option>B3-Type1</option>
+                                                                        <option>B3-Type2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="span4">
+                                                            <div class="control-group">
+                                                                <label class="control-label">Destination : </label>
+                                                                <div class="controls">
+                                                                    <select class="span6">
+                                                                        <option>Default Chart</option>
+                                                                        <option>Group By Pickup</option>
+                                                                        <option>Group By PNR</option>
+                                                                        <option>Group By PNR &amp; Pickup</option>
+                                                                        <option>B3-Type1</option>
+                                                                        <option>B3-Type2</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <h5 class="text-center">Reservation Details</h5>
+
+
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="8">Available Seats</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Seat No</th>
+                                                                <th>Ticket No</th>
+                                                                <th>Name</th>
+                                                                <th>Phone</th>
+                                                                <th>Boarding </th>
+                                                                <th>Destination</th>
+                                                                <th>Amount</th>
+                                                                <th>Issued By</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1A SS</td>
+                                                                <td>Quota</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1B SS</td>
+                                                                <td>Quota</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1C SS</td>
+                                                                <td>Quota</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1D SS</td>
+                                                                <td>Quota</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+
+
+
+
+
+                                                    <div class="row-fluid">
+                                                        <div class="widget-box">
+                                                            <div class="widget-title bg_lg"><span class="icon"><i class="fa fa-table fa-15x"></i></span>
+                                                                <h5>Summary</h5>
+                                                            </div>
+                                                            <div class="widget-content">
+                                                                <div class="row-fluid margin0">
+                                                                    <div class="span6">
+                                                                        <table class="table table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="3">All Online Branches</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Branch Name</td>
+                                                                                    <td>Seats</td>
+                                                                                    <td>Amount</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Total Seats</td>
+                                                                                    <td>0</td>
+                                                                                    <td>0.00</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table class="table table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="3">All Online Agents</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Agent Name</td>
+                                                                                    <td>Seats</td>
+                                                                                    <td>Amount</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Total Seats</td>
+                                                                                    <td>0</td>
+                                                                                    <td>0.00</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div>
+                                                                            E-Tickets : <b> 0 Seats </b> , Amount : <b> <i class="fa fa-inr"></i> 0.00 </b>
+                                                                        </div>
+                                                                        <div>Total Booked Seats : <b> 0 </b></div>
+
+
+                                                                    </div>
+                                                                    <div class="span6">
+
+                                                                        <table class="table table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="3">All Offline Branches</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Branch Name</td>
+                                                                                    <td>Seats</td>
+                                                                                    <td>Amount</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Total Seats</td>
+                                                                                    <td>0</td>
+                                                                                    <td>0.00</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table class="table table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="3">All offline Agents</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Agent Name</td>
+                                                                                    <td>Seats</td>
+                                                                                    <td>Amount</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Total Seats</td>
+                                                                                    <td>0</td>
+                                                                                    <td>0.00</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div>Total Amount :<b> <i class="fa fa-inr"></i>  0.00 </b></div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <hr />
+
+                                                                <h6>Printed By: Owner , 19/05/2017 11:56 AM</h6>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div id="tab7" class="tab-pane stages">
+                                                    <div class="row-fluid margin0">
+                                                        <div class="span12">
+
+                                                            <div class="pull-left">
+                                                                <h4>Routes and fares History</h4>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button class="btn btn-primary" id="serv-sear">Search</button>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <hr />
+                                                            <div class="serv_sea">
+                                                                <form>
+                                                                    <input type="text" placeholder="Search Terms" />
+                                                                    <button class="btn btn-primary">Search</button>
+                                                                    <button class="btn">Reset</button>
+                                                                    <i class="fa fa-window-close fa-2x pull-right" id="close"></i>
+                                                                </form>
+
+                                                                <div class="clearfix"></div>
+                                                            </div>
+
+
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Details</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Routes and fares were updated by yamani travel 18/05/2017 07:45 Pm </td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Delete</a>
+                                                                            <a href="">View</a>
+                                                                            <a href="">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Routes and fares were updated by yamani travel 18/05/2017 07:45 Pm
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="">Delete</a>
+                                                                            <a href="">View</a>
+                                                                            <a href="">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="text-left">2 Found</td>
+                                                                    </tr>
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <hr/>
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- container-fluid end -->
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+
+    <!--end-Footer-part-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.uniform.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/custom-chart.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

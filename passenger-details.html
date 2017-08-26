@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" /> </head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <div class="logo"> <img src="image/logo.png" alt="logo"> </div>
+                    </div>
+                    <div id="navbar6" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right menus">
+                            <li><a href="#">Print / SMS Ticket</a></li>
+                            <li><a href="#">Cancel Ticket</a></li>
+                            <li><a href="#">Cargo services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal1">Agent Login</a></li>
+                            <!-- <li><a href="#">Write to Us</a></li> -->
+                            <!--  <li id="login">
+                                    
+                                    <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="image/user.png" alt="" /> -->
+                            <!--                                        <i class="user"></i>-->
+                            <!--   <span>Log In</span>
+                                        <ul id="dropDown_open" class="dropdown-menu" aria-labelledby="dLabel" >
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal1">Agent Log In</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal2">Customer Log In</a>
+                                </li>
+                            </ul>
+                            </a>
+                            </li> --></ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Agent login modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Agent Log In</h4> </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> </div>
+                        <div class="checkbox text-center">
+                            <label>
+                                <input type="checkbox"> Remember me </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Customer login modal -->
+    <!--
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Customer Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="text-center">
+                                    <a href="#">Forget Password ?</a> | <span>New user ?</span> <a href="#">Register</a>
+                                </div>
+                                <div class="checkbox text-center">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </div>
+                                <hr/>
+                                <div class="text-center">
+                                    <button class="btn btn-primary">login with facebook </button>
+                                    <button class="btn btn-primary">login with google</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+-->
+    <section class="passenger">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <form class="form-inline search-form">
+                        <div class="form-group">
+                            <label for="exampleInputName2">From</label>
+                            <input type="text" class="form-control" placeholder=""> </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">To</label>
+                            <input type="text" class="form-control" placeholder=""> </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Onward</label>
+                            <input type="text" placeholder="" class="form-control datepicker" data-provide="datepicker" /> </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row pass-bor">
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <h4>Passenger Details</h4>
+                    <p class="pass-p">Onward Passenger Details</p> <span id="add_cha_seat"><a href="#"> (Add/Change Seat(s)) </a> </span>
+                    <div class="clearfix"></div>
+                    <div class="add-change">
+                        <div class="bus_border">
+                            <div class="seatWrap">
+                                <div class="drive_seat"> <img src="image/drive-seat.png" alt="" /> </div>
+                                <div class="seats">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="seat_layer tip-top" data-original-title="Seat No 1"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer tip-top" data-original-title="Seat No 2"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="no_seats"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="pull-right seat_active">
+                                                        <div class="seat_layer"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="seat_layer"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seat_info">
+                            <ul>
+                                <li class="">Available</li>
+                                <li class="">Selected</li>
+                                <li class="">Unavailable</li>
+                                <li class="">For Ladies</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-4">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Boarding At</label>
+                                        <select class="form-control">
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                        </select>
+                                    </div> <span>Padmaja Petrol Bunk Opp Beside Annapurna Complex</span> <span>Ph: 9291167444</span> </form>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-4">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Drop Off</label>
+                                        <select class="form-control">
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                            <option>aaaaa</option>
+                                        </select>
+                                    </div> <span>Srikalahasthi By Pass</span> <span>Ph: 9291167444</span> </form>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <h4>Contact Details</h4>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Email</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Mobile Number</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Mobile Number"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Alternate Number</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Alternate Number"> </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section>
+                        <h4>Verification Details</h4>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">ID Card Type</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control">
+                                        <option>asdf</option>
+                                        <option>asdf</option>
+                                        <option>asdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">ID Card Number</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="ID Card Number"> </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 on-joun">
+                    <h4>Travel Itinerary</h4>
+                    <div class="alert alert-info" role="alert"> <a href="#" class="alert-link">Onward Journey</a> </div>
+                    <p> <span>Guntur </span> to <span>Srikalahasthi</span> </p> <span>Sat, 12 Aug 2017</span>
+                    <br /> <span>Kakani Road Padmaja Petrol bunk Opp - 10:30 PM -</span>
+                    <div class="sel-seat">
+                        <div>Seat No(s) : </div>
+                        <div><b>10E, 10A, 8A </b></div>
+                    </div>
+                    <div>No. of Seats : 3 </div>
+                    <div>Service No : 77</div>
+                    <div>Fare : <span>&#8377;</span> <b> 700</b></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <section>
+                        <h4>Additional Offers</h4>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">Select Offers </label>
+                                <div class="col-sm-6">
+                                    <select class="form-control">
+                                        <option>offers</option>
+                                        <option>asdf</option>
+                                        <option>asdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label>
+                                <input type="checkbox" id="coup_click" /> Have Cash Coupons? </label>
+                            <div class="coupons">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Enter Coupon Code: </label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Coupon Code"> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Email</label>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Email"> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label"></label>
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-primary">Use</button>
+                                        <button class="btn btn-primary" id="coup_cls">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section>
+                        <h4>Payment Options</h4>
+                        <ul class="payment_options">
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" />Credit Card</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" />Debit Card</label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" />Net Banking</label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Wallets</h4>
+                        <ul class="Wallets_options">
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" /> <img src="image/paytm.png" alt="paytm" /> </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" /><img src="image/mobikwik.png" alt="mobikwik" /></label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" /><img src="image/ola.jpg" alt="ola" /></label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="payment" /><img src="image/jiomoney.jpeg" alt="jio" /></label>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h4>Payment Details</h4>
+                    <ul class="payment-deta">
+                        <li>
+                            <div>Total Fare (in <span>&#8377;</span>)</div>
+                            <div>750.00</div>
+                        </li>
+                        <li>
+                            <div>Discount Amount(in <span>&#8377;</span>)</div>
+                            <div>00.00</div>
+                        </li>
+                        <li>
+                            <div>Net Total (in <span>&#8377;</span>)</div>
+                            <div>00.00</div>
+                        </li>
+                        <li>
+                            <div>Coupons (in <span>&#8377;</span>)</div>
+                            <div>00.00</div>
+                        </li>
+                        <li>
+                            <div>Balance Total (in <span>&#8377;</span>)</div>
+                            <div>00.00</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <label>
+                        <input type="checkbox">I accept the <a href="terms-and-conditions.html">Terms & Conditions</a> and <a href="cancelled-services.html">Cancellation Policies</a></label>
+                    <br/>
+                    <button class="btn btn-primary">Proceed to Payment »</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footerLinks">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>ABOUT TRAVELS</h4></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Schedules</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Trabol</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>INFORMATION </h4></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Agent Registration</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 mob">
+                    <h4 class="text-right">Follow us</h4>
+                    <ul class="social text-right">
+                        <li>
+                            <a href="#"><img src="image/facebook.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/in.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/sco.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/youtube.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/pin.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>&copy; 2017 Travel.com. All Rights Reserved.</h4> </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4 class="text-right">Powered By TicketSimply™</h4> </div>
+            </div>
+        </div>
+    </section>
+    <!-- chat  -->
+    <button class="chat" id="chatBox"> <strong>Start chat</strong> </button>
+    <div class="chatWindow"> <img src="image/minus.png" alt="" class="mimize" />
+        <iframe src="chat.html" width="300" height="381" style="border:0"></iframe>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

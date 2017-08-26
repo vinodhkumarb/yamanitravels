@@ -1,0 +1,79 @@
+   /* custom responsive */
+    
+    @media (min-width: 0px) and (max-width: 768px) {
+        .form-padding {
+            right: 0;
+        }
+        .offers h3 {
+            margin-bottom: 2rem;
+        }
+        .menus {
+            padding: 0rem 1rem;
+        }
+        .date input {
+            width: 48.5%;
+            margin-bottom: 6px;
+        }
+        .copyrights h4 {
+            padding: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        .mob h4,
+        .social {
+            text-align: left;
+        }
+                .gallery li {
+    width: 50%;
+}
+    }
+    @media (min-width: 0px) and (max-width: 540px) {
+        .journeys input {
+            width: 90%;
+        }
+        .swapping {
+            position: absolute;
+            top: 28px;
+            left: 93%;
+        }
+        #to {
+            margin-left: 0;
+            margin-top: 7px;
+        }
+        .date input {
+            width: 90%;
+            margin-bottom: 6px;
+        }
+        .date {
+            margin: 6px 0px;
+        }
+        .form-padding .searchs {
+            background-size: 20px;
+            background-position: 22%;
+        }
+        .form-padding {
+            height: 410px;
+        }
+        .gallery li {
+    width: 98%;
+}
+    }
+    @media (min-width: 900px) and (max-width: 1600px) {
+        .banner_left {
+            width: 55%;
+            padding-right: 0;
+        }
+        .banner_right {
+            width: 45%;
+        }
+        .ban_padd {
+            padding-right: 0px;
+        }
+        .quick_book {
+            position: relative;
+            top: -20px;
+        }
+        header {
+            height: 70px;
+        }
+    }

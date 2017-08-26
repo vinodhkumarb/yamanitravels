@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                            <img src="image/logo.png" alt="logo"> </div>
+                    </div>
+                    <div id="navbar6" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right menus">
+                            <li><a href="#">Print / SMS Ticket</a></li>
+                            <li><a href="#">Cancel Ticket</a></li>
+                            <li><a href="#">Cargo services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal1">Agent Login</a></li>
+                            <!-- <li><a href="#">Write to Us</a></li> -->
+                            <!--  <li id="login">
+                                    
+                                    <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="image/user.png" alt="" /> -->
+                            <!--                                        <i class="user"></i>-->
+                            <!--   <span>Log In</span>
+                                        <ul id="dropDown_open" class="dropdown-menu" aria-labelledby="dLabel" >
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal1">Agent Log In</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal2">Customer Log In</a>
+                                </li>
+                            </ul>
+                            </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- Agent login modal -->
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Agent Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="checkbox text-center">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer login modal -->
+
+    <!--
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Customer Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="text-center">
+                                    <a href="#">Forget Password ?</a> | <span>New user ?</span> <a href="#">Register</a>
+                                </div>
+                                <div class="checkbox text-center">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </div>
+                                <hr/>
+                                <div class="text-center">
+                                    <button class="btn btn-primary">login with facebook </button>
+                                    <button class="btn btn-primary">login with google</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+-->
+
+
+
+
+    <section class="terms">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h3>Terms and Conditions</h3>
+                    <p>The company undertakes no liability in case of cancellation of trips due to breakdown or for reasons beyond the control of the management.However proportionate refund of fare will be allowed in case no alternate arrangement is made.</p>
+                    <ol>
+                        <li>Management is not responsible for your <b>luggage s/baggage belongings inside the bus/office.</b></li>
+                        <li>The ticket is valid for the particular journey to which it is issued.</li>
+                        <li>Tickets are not transferable. The management reserves the right to off - load passengers who are travelling on incorrect tickets.disturbing the co-passengers & also drunken passengers,without refund</li>
+                        <li>The Management reserves the right to cancel,postpone,change or delay the vehicle without assigining any reason, and to change the sitting arrangements in case of emergency.</li>
+                        <li>passengers are requested to report 15 minutes in advance.The bus will not wait for passengers who are late.</li>
+                        <li>Contraband and explosive article are no allowed.</li>
+                        <li>Smoking and consumption of alcohol is strictly prohibited in the coach</li>
+                        <li>There is no refund on cancellation of Pre/Postponed & Open ticket.</li>
+                        <li>For ticket cancellation and any other changes the customer has to visit nearest company office with ticket and telephonic request will not be entertained</li>
+                        <li>Changes to date or time can be made to your booking if you notify us at least one day prior to the scheduled departure time by visiting our branch/agency counter</li>
+                        <li>Pets and Animals not allowed inside the bus while Journey</li>
+                        <li>Any passenger disturbing the co-passengers is liable to be alighted from the coach.</li>
+                        <li>Seats Will Be Confirmed Only After Successful Payment. ( Depending Upon Seat Availability.</li>
+                        <li>The cancellation refund will be provided as a cash coupon with an expiry time of one year. You can use this cash coupon anytime with in that one year to do any further bookings.</li>
+                        <li>Cash coupon may be redeemed as a refund to your respective Credit/Debit Card account with in 30 days of the ticket cancellation.<br/>The amount will be credited in your account with in 8 to 10 working days after the refund initiation. <br/>The refund cash coupon amount would carry a Payment Gateway transaction charge of 5%(For E-Ticket Only) If the coupon is valid for one year only</li>
+                        <li><b>For children above 5year  full ticket complusory,</b> With out ticket children will not be allowed to board the bus (Age proof Required) .</li>
+                        <li><b>Within 4 hours from station main departure time their is no Pre/Postpone and Open ticket.</b></li>
+                        <li><b>Difference Amount will not be refunded, in case of Pre/ Post/ Open ticket cases.</b></li>
+                        <li>If booked coach gets cancelled/Change, Diifferent seats can be given in other coach/Same Coch.</li>
+                    </ol>
+                    <h4><b>Ticket cancellation Policies:</b></h4>
+                    <ol>
+                        <li>Less than 1 hours from the station departure time: 100 % Cancellation Charges.</li>
+                        <li>Between 1 Hrs to 3 Hrs from the station departure time: 70 % Cancellation Charges.</li>
+                        <li>Between 3 Hrs to 4 Hrs from the station departure time: 30 % Cancellation Charges.</li>
+                        <li>Between 4 Hrs to 24 Hrs from the station departure time: 10 % Cancellation Charges.</li>
+                        <li>Between 1 to 7 days before station departure time: 10 % Cancellation Charges.</li>
+                    </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container footerLinks">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>ABOUT TRAVELS</h4></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Schedules</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Trabol</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>INFORMATION </h4></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Agent Registration</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 mob">
+                    <h4 class="text-right">Follow us</h4>
+                    <ul class="social text-right">
+                        <li>
+                            <a href="#"><img src="image/facebook.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/in.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/sco.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/youtube.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/pin.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>&copy; 2017 Travel.com. All Rights Reserved.</h4>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4 class="text-right">Powered By TicketSimply™</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- chat  -->
+
+    <button class="chat" id="chatBox">
+        <strong>Start chat</strong>
+    </button>
+    <div class="chatWindow">
+        <img src="image/minus.png" alt="" class="mimize" />
+        <iframe src="chat.html" width="300" height="381" style="border:0"></iframe>
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

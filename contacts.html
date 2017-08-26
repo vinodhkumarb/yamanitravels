@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                            <img src="image/logo.png" alt="logo"> </div>
+                    </div>
+                    <div id="navbar6" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right menus">
+                            <li><a href="#">Print / SMS Ticket</a></li>
+                            <li><a href="#">Cancel Ticket</a></li>
+                            <li><a href="#">Cargo services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal1">Agent Login</a></li>
+                            <!-- <li><a href="#">Write to Us</a></li> -->
+                            <!--  <li id="login">
+                                    
+                                    <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="image/user.png" alt="" /> -->
+                            <!--                                        <i class="user"></i>-->
+                            <!--   <span>Log In</span>
+                                        <ul id="dropDown_open" class="dropdown-menu" aria-labelledby="dLabel" >
+                                            <li>
+                                                <a href="#" data-toggle="modal" data-target="#myModal1">Agent Log In</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal2">Customer Log In</a>
+                                </li>
+                            </ul>
+                            </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- Agent login modal -->
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Agent Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="checkbox text-center">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer login modal -->
+
+    <!--
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Customer Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="text-center">
+                                    <a href="#">Forget Password ?</a> | <span>New user ?</span> <a href="#">Register</a>
+                                </div>
+                                <div class="checkbox text-center">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </div>
+                                <hr/>
+                                <div class="text-center">
+                                    <button class="btn btn-primary">login with facebook </button>
+                                    <button class="btn btn-primary">login with google</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+-->
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h3>Contacts Us</h3>
+                    <p>Contact us anytime. We are always available for our customers</p>
+                    <h2>Head Office</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3><a href="#">Guntur</a></h3>
+                    <ul>
+                        <li>Opp. new RTC Bus Stand, Padma sri Lodge Complex, Guntur</li>
+                        <li>Guntur, Andhra Pradesh , Pin: 522001</li>
+                        <li> 9032707444, 9248067444</li>
+                        <li>
+                            <a href="mailto:info.yamanitravels@gmail.com"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+
+                    <ul>
+                        <li><a href="#">e-Ticketing & e-Payment related issues</a> </li>
+                        <li>080 46333629</li>
+                        <li> <a href="mailto:support@ticketsimply.com">support@ticketsimply.com</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            <hr />
+            
+            <h4 class="text-center">All Our Branches</h4>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Bangalore</h3>
+                    <ul>
+                        <li><a href="#">Bangalore (Marthahalli)</a></li>
+                        <li>743-3/1,MTK Reddy Complex,Near Syndicate</li>
+                        <li>Bank, Service road, Bangalore, Karnataka, Pin: 560037</li>
+                        <li>8123367444, 9036484950</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Chilakaluripet</h3>
+                    <ul>
+                        <li><a href="#">Chilakaluripet</a></li>
+                        <li>NRT Circle , Yamani Travels Office, Chilakaluripet, </li>
+                        <li>Andhra Pradesh, Pin:</li>
+                        <li>8121167444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Guntur</h3>
+                    <ul>
+                        <li><a href="#">Brindavan Gardens</a></li>
+                        <li>Opp Ravi Tasty Food's , Brindavan Gardens Center </li>
+                        <li>Guntur, Andhra Pradesh, Pin: 522001</li>
+                        <li>9295067444, 0863-6537444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Hyderabad</h3>
+                    <ul>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li>B.O: M.I.G.-219,Shop NO.-5, , Travels Road KPHB </li>
+                        <li>Colony, Hyderabad, Hyderabad, Andhra Pradesh, Pin: 500072</li>
+                        <li>9246237444, 9246297444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Ongole</h3>
+                    <ul>
+                        <li><a href="#">Ongole</a></li>
+                        <li>ongole, rtc dipo Near Gvr Medical Shop, Ongole , </li>
+                        <li>Andhra Pradesh, Pin: 500082</li>
+                        <li>9848486002, 9248067444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Pidugurala</h3>
+                    <ul>
+                        <li><a href="#">Pidugurala</a></li>
+                        <li>Yamani Travels, Main Road I-land center, </li>
+                        <li>Pidugurala, Andhra Pradesh, Pin: </li>
+                        <li>9292452631, 08649255799</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Sattenapalli</h3>
+                    <ul>
+                        <li><a href="#">Sattenapalli</a></li>
+                        <li>Shop No:3 ,Agri Culture Market Yard , Opp bus stand </li>
+                        <li> Sattenapalli, Andhra Pradesh, Pin: </li>
+                        <li>9291467444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Srikakulam</h3>
+                    <ul>
+                        <li><a href="#">Srikakulam</a></li>
+                        <li>Near Rtc Complex Palakonda Road Beside Judge Gari Bangla Yamani Travels Office, </li>
+                        <li>Srikakulam, Andhra Pradesh, Pin: 535002</li>
+                        <li>8121967444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+<hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Tenali</h3>
+                    <ul>
+                        <li><a href="#">Tenali</a></li>
+                        <li>tenali, bose road, Tenali </li>
+                        <li> Andhra Pradesh, Pin: </li>
+                        <li>8121267444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Tirupati</h3>
+                    <ul>
+                        <li><a href="#">Tirupati</a></li>
+                        <li>Opp Gangamma temple (pavan travels), RTC bus stand </li>
+                        <li>Tirupati, Andhra Pradesh, Pin: </li>
+                        <li>9550800654, 08776642666</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+<hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Vijayanagaram</h3>
+                    <ul>
+                        <li><a href="#">Vijayanagaram</a></li>
+                        <li>L.I.C Building Opposite Petrol Bunk Beside Yamani Travels Office </li>
+                        <li> vijayanagaram, Vijayanagaram, Andhra Pradesh, Pin: 535002 </li>
+                        <li>9247267444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Vijayawada</h3>
+                    <ul>
+                        <li><a href="#">Vijayawada</a></li>
+                        <li>Samba Murthy Road Beside kesineni travels, </li>
+                        <li>Hanumanpet , Vijayawada, Andhra Pradesh, Pin: 520010 </li>
+                        <li>0866-6537444, 9247467444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+<hr />
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h3>Visakhapatnam</h3>
+                    <ul>
+                        <li><a href="#">Visakhapatnam</a></li>
+                        <li>Gurudwar Junction Seethammapeta Road Yamani Travels Office, </li>
+                        <li> Gurudwar, Visakhapatnam, Andhra Pradesh, Pin: </li>
+                        <li>9247267444</li>
+                        <li><a href="mailto:info.yamanitravels@gmail.com">info.yamanitravels@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+<hr />
+
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="container footerLinks">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>ABOUT TRAVELS</h4></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Schedules</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Trabol</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <h4>INFORMATION </h4></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Agent Registration</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 mob">
+                    <h4 class="text-right">Follow us</h4>
+                    <ul class="social text-right">
+                        <li>
+                            <a href="#"><img src="image/facebook.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/in.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/sco.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/youtube.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/pin.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>&copy; 2017 Travel.com. All Rights Reserved.</h4>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4 class="text-right">Powered By TicketSimply™</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- chat  -->
+
+    <button class="chat" id="chatBox">
+        <strong>Start chat</strong>
+    </button>
+    <div class="chatWindow">
+        <img src="image/minus.png" alt="" class="mimize" />
+        <iframe src="chat.html" width="300" height="381" style="border:0"></iframe>
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

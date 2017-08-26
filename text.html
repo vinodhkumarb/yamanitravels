@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <title>Yamani Travels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" />
+-->
+</head>
+
+<body>
+
+    <div id="demo"></div>
+    
+<script type="text/javascript">
+    
+
+    function test(name,job,born) {
+        this.name = name;
+        this.job = job;
+        this.born = born;
+    }
+    
+    test.prototype.salary = 1000;
+    
+    var fred = new test("Fred Flintstone", "Caveman", 1970);
+console.log(fred.salary);
+    console.log(fred.born);
+    
+    
+        var str = "How are you doing today?";
+    var res = str.charAt(6);
+    var res1 = str.charCodeAt(1);
+    var res2 = str.endsWith('today?');
+    var res3 = str.slice(1,3);
+    var res4 = str.split(" ");
+    var res5 = str.toLowerCase();
+    
+    console.log(res);
+    console.log(res1);
+    console.log(res2);
+    console.log(res3);
+    console.log(res4);
+    console.log(res5);
+    
+    
+    document.addEventListener("click",clk); 
+    document.addEventListener("mouseover",moover);
+    document.addEventListener("mouseout",moout);
+    function clk() {
+        document.getElementById('demo').innerHTML += " click <br/>";
+    }     
+    function moover() {
+        document.getElementById('demo').innerHTML += "mouseover <br/>";
+    }    
+    function moout() {
+        document.getElementById('demo').innerHTML += " mouseout <br/> ";
+    } 
+    
+    var c = document.createComment('testing');
+    document.body.appendChild(c);
+    
+    var a = document.createElement("h1");
+    var b = document.createTextNode('click me !');
+    a.appendChild(b);
+    
+    document.body.appendChild(a);
+    
+    
+    
+    
+    
+    
+    
+</script>
+
+    
+    
+    
+<!--
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/main.js"></script>
+-->
+</body>
+
+</html>
